@@ -1,0 +1,17 @@
+{
+    "title": "Milk Oolong",
+    "name": "milk oolong",
+    "description": "Milk Oolong theme for Brackets",
+    "homepage": "",
+    "version": "1.0.0",
+    "author": "Ekaterina Dontsova <ekaterina.dontsova@gmail.com>",
+    "engines": {
+        "brackets": ">=0.42.0"
+    },
+    "theme": {
+        "file": "main.less",
+        "dark": false,
+        "addModeClass": true
+    },
+     "keywords": ["theme"]
+}

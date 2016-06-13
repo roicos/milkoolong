@@ -1,0 +1,54 @@
+/* Brackets Milk Oolong Theme */
+
+/* Colors */
+
+@dark-green: #38700F;
+@light-green: #cce8b0;
+@yellow-green: #c2e438;
+@green: #677A11;
+
+@dark-gold: #525214;
+@dark-orange: #d03306;
+@dark-yellow: #feb706;
+
+@very-light-grey: #f3f3f1;
+@light-grey: #cfcfc9;
+@medium-grey: #9f9f93;
+@dark-grey: #44443c;
+
+@red: #A30800;
+@white: #ffffff;
+
+/* Styling */
+
+@background: @white; // Code background
+@foreground: @dark-green; // Code foreground
+@comment: @medium-grey; // Comment color
+@tag: @dark-green; // HTML tag
+@attribute: @dark-green; // HTML attribute
+@id: @red; // CSS ID
+@property: @dark-gold; // Property, CSS key color
+@qualifier: @dark-yellow; // Qualifier, CSS class color
+@string: @green; // String
+@variable: @dark-orange; // Variable color
+@definition: @green; // Definition color
+//@number: @orangered; // Number
+@operator: @dark-grey; // Math
+@error: @red; // Error!
+@matchingbracket: @yellow-green; // Matchingbracket color
+
+/* Code Styling */
+
+.CodeMirror, .CodeMirror-scroll { background-color: @background; color: @foreground; } // Overlay
+.CodeMirror-linenumber { color: @comment; } // Line numbers
+.cm-comment { color: @comment; } // Comment
+.cm-atom { color: @definition; } // Definition
+.cm-tag { color: @tag; }
+
+span.CodeMirror-matchingbracket { background-color: @matchingbracket; }
+
+/* CSS mode */ 
+.cm-m-css.cm-variable-2 { color: @variable; } // Variable
+.cm-m-css.cm-qualifier { color: @qualifier; } // Qualifier
+.cm-m-css.cm-property { color: @property; } // Property
+.cm-m-css.cm-builtin { color: @id};
