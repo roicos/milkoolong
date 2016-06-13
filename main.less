@@ -5,11 +5,11 @@
 @dark-green: #38700F;
 @light-green: #cce8b0;
 @yellow-green: #c2e438;
-@green: #677A11;
+@dark-yellow-green: #aacd1c;
 
-@dark-gold: #525214;
 @dark-orange: #d03306;
-@dark-yellow: #feb706;
+@orange: #feb706;
+@yellow: #b7ae19;
 
 @very-light-grey: #f3f3f1;
 @light-grey: #cfcfc9;
@@ -22,20 +22,22 @@
 /* Styling */
 
 @background: @white; // Code background
-@foreground: @dark-green; // Code foreground
+@foreground: @dark-grey; // Code foreground
 @comment: @medium-grey; // Comment color
 @tag: @dark-green; // HTML tag
 @attribute: @dark-green; // HTML attribute
-@id: @red; // CSS ID
-@property: @dark-gold; // Property, CSS key color
-@qualifier: @dark-yellow; // Qualifier, CSS class color
-@string: @green; // String
-@variable: @dark-orange; // Variable color
-@definition: @green; // Definition color
-//@number: @orangered; // Number
+@id: @dark-green; // CSS ID
+@property: @dark-grey; // Property, CSS key
+@qualifier: @dark-yellow-green; // Qualifier, CSS class
+@value: @yellow; // CSS Value
+@string: @dark-green; // String
+@variable: @dark-orange; // Variable
+@definition: @dark-grey; // Definition
+@keyword: @red; // Keyword
+@number: @orange; // Number
 @operator: @dark-grey; // Math
 @error: @red; // Error!
-@matchingbracket: @yellow-green; // Matchingbracket color
+@matchingbracket: @yellow-green; // Matchingbracket
 
 /* Code Styling */
 
@@ -43,12 +45,21 @@
 .CodeMirror-linenumber { color: @comment; } // Line numbers
 .cm-comment { color: @comment; } // Comment
 .cm-atom { color: @definition; } // Definition
-.cm-tag { color: @tag; }
+.cm-keyword { color: @keyword; } // Keyword
+span.CodeMirror-matchingbracket { background-color: @matchingbracket; } // matchingbracket
 
-span.CodeMirror-matchingbracket { background-color: @matchingbracket; }
+/* HTML, XML mode */
+.cm-m-xml.cm-tag { color: @tag; }
 
-/* CSS mode */ 
+/* CSS, LESS mode */ 
 .cm-m-css.cm-variable-2 { color: @variable; } // Variable
-.cm-m-css.cm-qualifier { color: @qualifier; } // Qualifier
-.cm-m-css.cm-property { color: @property; } // Property
-.cm-m-css.cm-builtin { color: @id};
+.cm-m-css.cm-qualifier { color: @qualifier; } // Class
+.cm-m-css.cm-property { color: @property; } // Key
+.cm-m-css.cm-builtin { color: @id; } // Id
+.cm-m-css.cm-tag { color: @orange; } // Tag
+.cm-m-css.cm-atom { color: @yellow; } // Value
+
+/* JavaScript mode */
+
+
+/* Php mode */
