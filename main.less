@@ -4,9 +4,10 @@
 
 @dark-green: #38700F;
 @light-green: #cce8b0;
-@yellow-green: #c2e438;
+@yellow-green: rgba(194, 228, 56, 0.5);
 @dark-yellow-green: #aacd1c;
 
+@brown: #330c00;
 @dark-orange: #d03306;
 @orange: #feb706;
 @yellow: #b7ae19;
@@ -23,43 +24,46 @@
 
 @background: @white; // Code background
 @foreground: @dark-grey; // Code foreground
-@comment: @medium-grey; // Comment color
-@tag: @dark-green; // HTML tag
-@attribute: @dark-green; // HTML attribute
-@id: @dark-green; // CSS ID
-@property: @dark-grey; // Property, CSS key
-@qualifier: @dark-yellow-green; // Qualifier, CSS class
+@comment: @medium-grey; // Comment colo
 @value: @yellow; // CSS Value
-@string: @dark-green; // String
 @variable: @dark-orange; // Variable
-@definition: @dark-grey; // Definition
-@keyword: @red; // Keyword
-@number: @orange; // Number
-@operator: @dark-grey; // Math
+@keyword: @yellow; // Keyword
+@number: @dark-yellow-green; // Number
+@operator: @brown; // Math
 @error: @red; // Error!
-@matchingbracket: @yellow-green; // Matchingbracket
+@matching: @yellow-green; // Matchingbracket, matchingtag
 
 /* Code Styling */
 
 .CodeMirror, .CodeMirror-scroll { background-color: @background; color: @foreground; } // Overlay
 .CodeMirror-linenumber { color: @comment; } // Line numbers
 .cm-comment { color: @comment; } // Comment
-.cm-atom { color: @definition; } // Definition
+.cm-atom { color: @dark-grey; }
 .cm-keyword { color: @keyword; } // Keyword
-span.CodeMirror-matchingbracket { background-color: @matchingbracket; } // matchingbracket
+.cm-def, .cm-variable, .cm-variable-2 { color: @variable; }
+.cm-meta { color: @red; }
+span.CodeMirror-matchingbracket, span.CodeMirror-matchingtag { background-color: @matching; } // matchingbracket
+
 
 /* HTML, XML mode */
-.cm-m-xml.cm-tag { color: @tag; }
+.cm-m-xml.cm-tag { color: @dark-green; }
+.cm-m-xml.cm-attribute { color: @dark-orange; }
+.cm-m-xml.cm-string { color: @brown; }
 
 /* CSS, LESS mode */ 
-.cm-m-css.cm-variable-2 { color: @variable; } // Variable
-.cm-m-css.cm-qualifier { color: @qualifier; } // Class
-.cm-m-css.cm-property { color: @property; } // Key
-.cm-m-css.cm-builtin { color: @id; } // Id
+.cm-m-css.cm-qualifier { color: @dark-yellow-green; } // Class
+.cm-m-css.cm-property { color: @dark-grey; } // Key
+.cm-m-css.cm-builtin { color: @dark-green; } // Id
 .cm-m-css.cm-tag { color: @orange; } // Tag
 .cm-m-css.cm-atom { color: @yellow; } // Value
+.cm-m-css.cm-keyword { color: @red; }
 
 /* JavaScript mode */
-
+.cm-m-javascript.cm-property { color: @dark-grey; }
+.cm-m-javascript.cm-property.cm-string { color: @dark-green; }
+.cm-m-javascript.cm-string { color: @dark-yellow-green; }
 
 /* Php mode */
+.cm-m-clike.cm-def { color: @orange; } // functions, classes
+.cm-m-clike.cm-builtin { color: @dark-yellow-green; } // builtin functions
+.cm-m-clike.cm-string { color: @dark-green; }
