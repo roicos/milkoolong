@@ -8,6 +8,7 @@
 @dark-yellow-green: #aacd1c;
 
 @brown: #330c00;
+@red: #A30800;
 @dark-orange: #d03306;
 @orange: #feb706;
 @yellow: #b7ae19;
@@ -17,15 +18,13 @@
 @medium-grey: #9f9f93;
 @dark-grey: #44443c;
 
-@red: #A30800;
 @white: #ffffff;
 
 /* Styling */
 
 @background: @white; // Code background
 @foreground: @dark-grey; // Code foreground
-@comment: @medium-grey; // Comment colo
-@value: @yellow; // CSS Value
+@comment: @medium-grey; // Comment
 @variable: @dark-orange; // Variable
 @keyword: @yellow; // Keyword
 @number: @dark-yellow-green; // Number
@@ -42,7 +41,12 @@
 .cm-keyword { color: @keyword; } // Keyword
 .cm-def, .cm-variable, .cm-variable-2 { color: @variable; }
 .cm-meta { color: @red; }
+
 span.CodeMirror-matchingbracket, span.CodeMirror-matchingtag { background-color: @matching; } // matchingbracket
+
+// searching
+.CodeMirror-searching {background-color: @very-light-grey;}
+.CodeMirror-searching.searching-current-match { background-color: @light-grey;}
 
 
 /* HTML, XML mode */
@@ -67,3 +71,6 @@ span.CodeMirror-matchingbracket, span.CodeMirror-matchingtag { background-color:
 .cm-m-clike.cm-def { color: @orange; } // functions, classes
 .cm-m-clike.cm-builtin { color: @dark-yellow-green; } // builtin functions
 .cm-m-clike.cm-string { color: @dark-green; }
+
+/* Java */
+.cm-m-clike.cm-variable { color: @dark-yellow-green; }
