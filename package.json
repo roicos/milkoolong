@@ -1,13 +1,17 @@
 {
     "title": "Milk Oolong",
-    "name": "milk oolong",
-    "description": "Milk Oolong theme for Brackets",
+    "name": "milk-oolong",
+    "description": "Milk Oolong theme for Brackets. Light sunny theme for harmony web coding.",
     "homepage": "https://github.com/roicos/milkoolong",
     "version": "1.0.0",
     "author": "Ekaterina Dontsova <ekaterina.dontsova@gmail.com>",
     "engines": {
         "brackets": ">=0.42.0"
     },
+     "repository": {
+        "type": "git",
+         "url": "git://github.com/roicos/milkoolong.git"
+     },
     "theme": {
         "file": "main.less",
         "dark": false,
