@@ -4,19 +4,19 @@ Milk Oolong theme for Brackets
 ### Using color palette of fresh joyful morning with cup of flavorous green tea.
 
 ## HTML
-![HTML Screenshot](https://github.com/roicos/milkoolong/blob/master/images/html.png)
+![HTML Screenshot](https://github.com/roicos/milkoolong/blob/master/image/html.png)
 
 ## CSS, LESS
-![HTML Screenshot](https://github.com/roicos/milkoolong/blob/master/images/less.png)
+![HTML Screenshot](https://github.com/roicos/milkoolong/blob/master/image/less.png)
 
 ## JavaScript
-![HTML Screenshot](https://github.com/roicos/milkoolong/blob/master/images/javascript.png)
+![HTML Screenshot](https://github.com/roicos/milkoolong/blob/master/image/javascript.png)
 
 ## JQuery
-![HTML Screenshot](https://github.com/roicos/milkoolong/blob/master/images/jquery.png)
+![HTML Screenshot](https://github.com/roicos/milkoolong/blob/master/image/jquery.png)
 
 ## PHP
-![HTML Screenshot](https://github.com/roicos/milkoolong/blob/master/images/php.png)
+![HTML Screenshot](https://github.com/roicos/milkoolong/blob/master/image/php.png)
 
 ## Java
-![HTML Screenshot](https://github.com/roicos/milkoolong/blob/master/images/java.png)
+![HTML Screenshot](https://github.com/roicos/milkoolong/blob/master/image/java.png)
